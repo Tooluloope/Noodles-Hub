@@ -1,0 +1,22 @@
+.bg {
+  height: 100%;
+  /*width: 100%;*/
+  /*padding: 30px 0 30px;*/
+  margin: 0;
+  background: url("http://res.cloudinary.com/dn1b66xo5/image/upload/c_scale,h_600,q_auto:eco/v1509987250/photo-1503767849114-976b67568b02_li9wxo.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  position: fixed;
+}
+.form-container {
+
+  border: 0 solid;
+  padding: 10% 10%;
+  margin-top: 20%;
+  -webkit-box-shadow: 2px 2px 24px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 24px 8px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 24px 8px rgba(0,0,0,0.75);
+}
+label {
+  color: white;
+}

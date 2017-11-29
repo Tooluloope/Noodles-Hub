@@ -1,0 +1,29 @@
+main {
+
+  height: 100%;
+  /*width: 100%;*/
+  padding: 30px 0 30px;
+  margin: 0;
+  background: url("http://res.cloudinary.com/dn1b66xo5/image/upload/c_scale,h_600,q_auto:eco/v1509987250/photo-1503767849114-976b67568b02_li9wxo.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: fixed;
+}
+main.inner.cover {
+  left: 0;
+  right: 0;
+}
+h1,p {
+  left: 50%;
+  right: 50%;
+  text-align: center;
+}
+div.home-info{
+  padding-top: 100px;
+}
+a:hover {
+  font-size: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: all 0.3s
+}

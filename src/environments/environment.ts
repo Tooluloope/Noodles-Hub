@@ -4,5 +4,13 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyCrC6CWqyl1yqgBMxa_vIiSMJNRVBstrQ8',
+    authDomain: 'noodles-hub.firebaseapp.com',
+    databaseURL: 'https://noodles-hub.firebaseio.com',
+    projectId: 'noodles-hub',
+    storageBucket: '',
+    messagingSenderId: '78471936493'
+  }
 };
