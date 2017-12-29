@@ -3,6 +3,18 @@
 body {
   padding-top: 57px;
 }
+.btn {
+  cursor: pointer;
+}
+.scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 293px) {
+  .font {
+    display: none;
+  }
+}
 /*.header {*/
 
   /*height: 600px;*/
