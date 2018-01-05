@@ -1,0 +1,9 @@
+.quantity {
+    height: 37px;
+    line-height: 37px;
+}
+
+button.button {
+    color: white !important;
+    background-color: #e65100 !important;
+}

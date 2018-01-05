@@ -1,0 +1,21 @@
+.dropdown-menu a:hover {
+  background-color: #1dade2;
+}
+.dropdown-menu .dropdown-item:hover {
+  border-radius: 2px;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+  /* background-color: #4285F4; */
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+.dropdown .dropdown-menu {
+  padding: .5rem;
+}
+.primary-font {
+  font-family: 'Norican', cursive;
+  font-size: 1.25rem;
+  line-height: inherit;
+}
+.top-nav, .navbar {
+  background-color: #9a381a !important;
+}

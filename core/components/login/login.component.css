@@ -1,0 +1,36 @@
+.form-header {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+}
+
+.default-color {
+    background-color: #e65100 !important;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.btn-default {
+    background-color: #e65100 !important;
+}
+
+
+/* div {
+    display: block;
+} */
+
+.form-container {
+    top: 0;
+    border: 0 solid;
+    overflow: visible;
+    padding: 10% 10%;
+    margin-top: 20%;
+    -webkit-box-shadow: 2px 2px 24px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 24px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 24px 8px rgba(0, 0, 0, 0.75);
+}

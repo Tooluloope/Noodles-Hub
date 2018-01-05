@@ -1,0 +1,45 @@
+<nav>
+    <mdb-navbar SideClass="top-nav navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar top-nav-collapse orange darken-4" [containerInside]="false">
+        <logo><a class="navbar-brand primary-font" routerLink="/">Noodles <span class="font-weight-bold" style="color: #41723B">Hub</span></a></logo>
+        <links>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/" class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link waves-light" mdbRippleRadius routerLink="/shopping-cart">
+                        <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                        <span class="badge primary-color badge-pill" *ngIf="cart$ | async as cart">
+        {{ cart.totalItemsCount }}
+        </span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/restaurants" class="nav-link waves-light">Restaurants</a>
+                </li>
+                <ng-template #anonymousUser>
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link waves-light" routerLink="/login">Login <i class="fa fa-user-plus" aria-hidden="true"></i></a>
+                    </li>
+                </ng-template>
+                <li *ngIf="appUser; else anonymousUser" class="nav-item dropdown" dropdown routerLinkActive="active">
+                    <a *ngIf="appUser.name" class="nav-link dropdown-toggle waves-light" dropdownToggle mdbRippleRadius>{{ appUser.name }}</a>
+                    <a *ngIf="!appUser.name" class="nav-link dropdown-toggle waves-light" dropdownToggle mdbRippleRadius>Welcome</a>
+                    <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                        <a class="dropdown-item waves-light" mdbRippleRadius routerLink="/my/orders">My Orders</a>
+                        <ng-container *ngIf="appUser.isAdmin">
+                            <a class="dropdown-item waves-light" mdbRippleRadius routerLink="/admin/orders">Manage Orders</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius routerLink="/admin/restaurants">Manage Products</a>
+                        </ng-container>
+                        <div class="divider dropdown-divider"></div>
+                        <a mdbRippleRadius (click)="logout()" class="dropdown-item waves-light">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </links>
+
+    </mdb-navbar>
+</nav>
+<!--/.Navbar-->

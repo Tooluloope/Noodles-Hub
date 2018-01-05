@@ -1,0 +1,51 @@
+<div style="height: 100px"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 col-sm-12 col-xs-12 col-xl-3"></div>
+        <div class="col-md-8 col-sm-12 col-xs-12 col-xl-6" style="height: 100%;">
+            <form (ngSubmit)="onSignin(f)" #f="ngForm">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-header default-color">
+                            <h3><i class="fa fa-lock"></i> Login:</h3>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary btn-block" (click)="loginWithFacebook()">
+                            <i class="fa fa-facebook" aria-hidden="true"></i> <span class="font"> SignIn with Facebook</span>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-block" (click)="loginWithGoogle()" style="margin-bottom: 25px;">
+                            <i class="fa fa-google" aria-hidden="true"></i> <span class="font"> SignIn with Google</span>
+                            </button>
+                            <div class="md-form">
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input type="email" id="email" name="email" ngModel class="form-control" mdbActive>
+                                <label for="email">Your email</label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-lock prefix grey-text"></i>
+                                <input type="password" id="password" name="password" ngModel class="form-control" mdbActive>
+                                <label for="password">Your password</label>
+                            </div>
+
+                            <div class="text-center">
+                                <button class="btn btn-default waves-light" type="submit" [disabled]="!f.valid" mdbRippleRadius>Login</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <div class="options">
+                                <p>Not a member? <a routerLink="/signup">Sign Up</a></p>
+                                <p>Forgot <a href="#">Password?</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12 col-xl-3"></div>
+    </div>
+</div>

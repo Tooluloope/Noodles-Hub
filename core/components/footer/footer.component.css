@@ -1,0 +1,57 @@
+.btn-fb {
+  background-color: #3B5998;
+}
+.btn-floating {
+  z-index: 1;
+  overflow: hidden;
+  width: 47px;
+  height: 47px;
+  padding: 0;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  vertical-align: middle;
+}
+.my-1 {
+  margin-bottom: .25rem!important;
+}
+.btn-floating i {
+  width: inherit;
+  font-size: 1.25rem;
+  line-height: 47px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+}
+.btn-li {
+  background-color: #0082CA;
+}
+.btn-ins {
+  background-color: #2E5E86;
+}
+.btn-tw {
+  background-color: #55ACEE;
+}
+.btn-tw:focus, .btn-tw:hover {
+  background-color: #6cb7f0;
+}
+.btn-fb:focus, .btn-fb:hover {
+  background-color: #4264aa;
+}
+.btn-li:focus, .btn-li:hover {
+  background-color: #0092e4;
+}
+.btn-ins:focus, .btn-ins:hover {
+  background-color: #356b99;
+}
+.btn-floating:hover {
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+.color {
+  background-color: #292c35;
+}

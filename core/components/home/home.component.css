@@ -1,0 +1,71 @@
+header.masthead {
+    position: relative;
+    -webkit-background-size: cover;
+    background-image: url('https://res.cloudinary.com/dn1b66xo5/image/upload/q_10/v1515010849/home.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+header.masthead h1 {
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+    header.masthead h1 {
+        font-size: 3rem;
+    }
+}
+
+.features-icons {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.features-icons .features-icons-item {
+    max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+}
+
+.background {
+    background-color: white;
+    height: 50%;
+    color: black;
+}
+
+.button {
+    color: white !important;
+    background-color: #007c32 !important;
+}
+
+.button:hover {
+    background-color: #00e25b !important;
+}
+
+.btn-rounded {
+    border-radius: 10em;
+}
+
+a .primary-color:hover {
+    background-color: #00e25b !important;
+}

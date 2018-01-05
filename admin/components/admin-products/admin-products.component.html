@@ -1,0 +1,68 @@
+<div class="container" style="margin-top: 30px; padding: 50px 0;">
+  <p><a routerLink="/admin/restaurants/new" class="btn btn-primary">New Product</a></p>
+ <p>
+   <input class="form-control" placeholder="Search..."
+   (keyup)="filter(query.value)" #query>
+ </p>
+  <data-table
+  [items]="items"
+  [itemCount]="itemCount"
+  (reload)="reloadItems($event)"
+  >
+    <data-table-column
+    [property]="'title'"
+    [header]="'Title'"
+    [sortable]="true"
+    [resizable]="true"
+    >
+    </data-table-column>
+    <data-table-column
+      [property]="'price'"
+      [header]="'Delivery Price'"
+      [sortable]="true"
+      [resizable]="true"
+    >
+      <ng-template #dataTableCell let-item="item">
+        {{ item.price | currency:'NGN':true }}
+      </ng-template>
+    </data-table-column>
+    <data-table-column
+      [property]="'restaurant'"
+      [header]="'Restaurant'"
+      [sortable]="true"
+      [resizable]="true"
+    >
+    </data-table-column>
+    <data-table-column
+      [property]="'$key'"
+    >
+      <ng-template #dataTableCell let-item="item">
+        <a [routerLink]="['/admin/restaurants/', item.$key]">Edit</a>
+      </ng-template>
+    </data-table-column>
+
+  </data-table>
+
+
+  <!--<table class="table">-->
+    <!--<thead>-->
+    <!--<tr>-->
+      <!--<th>Title</th>-->
+      <!--<th>Price</th>-->
+      <!--<th>Restaurant</th>-->
+      <!--<th></th>-->
+    <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody>-->
+    <!--<tr *ngFor="let p of filteredProducts">-->
+      <!--<td>{{ p.title}}</td>-->
+      <!--<td>{{ p.price }}</td>-->
+      <!--<td>{{ p.restaurant }}</td>-->
+      <!--<td>-->
+        <!--<a [routerLink]="['/admin/restaurants/', p.$key]">Edit</a>-->
+      <!--</td>-->
+    <!--</tr>-->
+    <!--</tbody>-->
+  <!--</table>-->
+</div>
+

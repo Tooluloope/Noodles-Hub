@@ -1,0 +1,16 @@
+.card-footer {
+    padding: 0;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    height: 100%;
+}
+
+button.button {
+    color: white !important;
+    background-color: #007c32 !important;
+}
