@@ -18,5 +18,6 @@ module.exports = {
         ],
         mergeStaticsConfig: true
       }
-      )]
+    )
+  ],
 };
